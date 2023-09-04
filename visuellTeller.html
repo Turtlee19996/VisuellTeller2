@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="output"></div>
+    <button onclick="setNum0()">Set Number to 0</button>
+    <button onclick="setNum100()">Set Number to 100</button>
+    <button onclick="addNum()">+</button>
+    <button onclick="removeNum()">-</button>
+
+    <script>
+        //var number = 5; //int
+        //var floatnumber = 5.5; //kommaseparert tall
+        // var text = "en liten textbit"; //string
+        // var enkeltTegn = 'a'; //char
+        // var booleans = ture; //booleans
+
+        var outputDiv = document.getElementById('output');
+        var numToShow = 0;
+
+        function setNum0() {
+            numToShow = 0;
+            outputDiv.innerHTML = numToShow;
+        }
+
+        function setNum100() {
+            numToShow = 100;
+            outputDiv.innerHTML = numToShow;
+        }
+
+        function addNum(){
+            numToShow ++;
+            outputDiv.innerHTML = numToShow;
+        }
+        function removeNum(){
+            numToShow --;
+            outputDiv.innerHTML = numToShow;
+        }
+        
+
+    </script>
+</body>
+
+</html>
